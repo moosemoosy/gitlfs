@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditArticleActivity">
+    <include
+        android:id="@+id/add_post_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <Button
+        android:id="@+id/edit_article_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/editorlinearlayout"
+        android:layout_marginTop="5dp">
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/editorlinearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_post_toolbar">
+
+        <net.dankito.richtexteditor.android.RichTextEditor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+        </net.dankito.richtexteditor.android.RichTextEditor>
+
+        <net.dankito.richtexteditor.android.toolbar.AllCommandsEditorToolbar
+            android:id="@+id/editorToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/colorPrimary">
+        </net.dankito.richtexteditor.android.toolbar.AllCommandsEditorToolbar>
+
+    </LinearLayout>
+
+</RelativeLayout>

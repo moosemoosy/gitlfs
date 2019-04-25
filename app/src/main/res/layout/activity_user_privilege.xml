@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPrivilegeActivity"
+    android:background="#e3f2fd">
+
+    <include
+        android:id="@+id/user_list_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/filter_bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/user_list_toolbar"
+        android:background="@drawable/inputs"
+        android:paddingLeft="15dp"
+        android:hint="Search here..."/>
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/filter_bar">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">INSPIRE</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string name="color_00">#ffffff</string>
+    <string name="color_0">#000000</string>
+    <string name="color_1">#b3edff</string>
+    <string name="color_2">#b3ffb3</string>
+    <string name="color_3">#ffad99</string>
+    <string name="color_4">#ffb3ff</string>
+    <string name="color_5">#cc00ff</string>
+    <string name="color_6">#ff0000</string>
+    <string name="color_7">#00ff00</string>
+    <string name="color_8">#0000ff</string>
+    <string name="date_time">date time</string>
+    <string name="author_name">-Author_name</string>
+    <string name="article_title_here">Article Title Here</string>
+    <string name="personality_name">Personality name</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="article">Article</string>
+    <string name="video">Video</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyArticlesActivity">
+
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/main_page_toolbar">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/all_author_article_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+                <Button
+                    android:id="@+id/pending_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="pending"
+                    android:background="#FFA500"/>
+                <Button
+                    android:id="@+id/approved_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="approved"
+                    android:background="#32CD32"/>
+                <Button
+                    android:id="@+id/rejected_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="rejected"
+                    android:background="@android:color/holo_red_light"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+</RelativeLayout>

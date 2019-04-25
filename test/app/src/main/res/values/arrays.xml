@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="colorlist">
+        <item>@string/color_00</item>
+        <item>@string/color_0</item>
+        <item>@string/color_1</item>
+        <item>@string/color_2</item>
+        <item>@string/color_3</item>
+        <item>@string/color_4</item>
+        <item>@string/color_5</item>
+        <item>@string/color_6</item>
+        <item>@string/color_7</item>
+        <item>@string/color_8</item>
+    </string-array>
+
+    <string-array name="articletypelist">
+        <item>@string/article</item>
+        <item>@string/video</item>
+    </string-array>
+
+</resources>

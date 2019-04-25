@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/admin_panel"
+        android:title="Admin Panel"
+        android:icon="@drawable/admin_panel"/>
+    <item
+        android:id="@+id/nav_notification"
+        android:title="Notifications"
+        android:icon="@drawable/notification"/>
+    <item
+        android:id="@+id/my_articles"
+        android:title="My Articles"
+        android:icon="@drawable/my_articles"
+        />
+    <item
+        android:id="@+id/nav_subscription"
+        android:title="My Subscriptions"
+        android:icon="@drawable/subscription"/>
+    <item
+        android:id="@+id/nav_subscribe"
+        android:title="Subscribe"
+        android:icon="@drawable/subscribe"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+</menu>
